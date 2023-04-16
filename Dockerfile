@@ -8,6 +8,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY ./src /app/src
 
-EXPOSE 5000
-
-CMD flask --app src/app run --host=0.0.0.0 --port=8080
+CMD uvicorn --host '0.0.0.0' --port '8080' src.app:app

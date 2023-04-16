@@ -1,8 +1,8 @@
 from unittest import TestCase
 
-from app import index
+from app import root
 
 
 class AppTests(TestCase):
-    def test_index(self):
-        self.assertEqual(index(), {'message': 'Hello, world!'})
+    def test_root(self):
+        self.assertEqual(root(), {'message': 'Hello, world!'})

@@ -1,7 +1,7 @@
 # Night Bull
 
 Simple Python application to experiment with venv, dependencies, pytest,
-flake8 and Flask.
+flake8 and FastAPI.
 
 ## Getting Started
 
@@ -16,7 +16,8 @@ $ docker run --rm -it -p 8080:8080 nightbull:0.1
 ```
 
 ```
- * Serving Flask app 'src/app'
-    ...
-Press CTRL+C to quit
+INFO:     Started server process [7]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
 ```
