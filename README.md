@@ -16,7 +16,4 @@ $ docker run --rm -it -p 8080:8080 nightbull:0.1
 ```
 
 ```
- * Serving Flask app 'src/app'
-    ...
-Press CTRL+C to quit
 ```
