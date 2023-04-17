@@ -6,13 +6,7 @@ flake8 and FastAPI.
 ## Getting Started
 
 ```console
-$ docker build -t nightbull:0.1
-```
-
-## Usage
-
-```console
-$ docker run --rm -it -p 8080:8080 nightbull:0.1
+$ docker compose up
 ```
 
 ```
@@ -28,7 +22,34 @@ The application is using FastAPI which uses Redoc to generate OpenAPI
 documentations. To access the generated documentation after the application
 started, visit the `/redoc` endpoint.
 
-![Documentation](/documentation.png)
+```
+"/": {
+  "get": {
+    "summary": "Root",
+    "description": "Get root endpoint",
+    "responses": {
+      "200": {
+        "description": "Successful response",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string"
+                }
+              },
+              "example": {
+                "message": "Hello, world!"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
 
 ## Contributing
 
