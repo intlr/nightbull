@@ -28,10 +28,8 @@ app = FastAPI()
 def root():
     """
     The root function describes the behavior for the root endpoint (main
-    endpoint). To keep things simple, it will simply return a JSON object with
-    a static message.
-
-    This behavior can be easily tested by invoking the root function from
-    outside the package and testing its response.
+    endpoint). To keep things simple, it only returns a JSON object with a
+    static message.
     """
+
     return {'message': 'Hello, world!'}
